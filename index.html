@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>مهدی ارجمندی — برنامه‌نویس بک‌اند</title>
+    <meta name="description" content="مهدی ارجمندی، دانشجوی علوم کامپیوتر دانشگاه تبریز و برنامه‌نویس بک‌اند با Rust و Python. پروژه‌ها، مهارت‌ها و راه‌های تماس.">
+    <meta name="author" content="مهدی ارجمندی">
+    <meta name="theme-color" content="#07080b">
+    <meta name="color-scheme" content="dark">
+
+    <script>document.documentElement.classList.add("js");</script>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <noscript>
+        <style>
+            @media (max-width: 920px) {
+                .nav {
+                    height: auto;
+                    min-height: var(--header-h);
+                    flex-wrap: wrap;
+                    padding-block: 0.55rem;
+                }
+                .nav-links {
+                    position: static;
+                    inset: auto;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0;
+                    border: 0;
+                    background: none;
+                    box-shadow: none;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: none;
+                }
+                .nav-toggle {
+                    display: none;
+                }
+            }
+        </style>
+    </noscript>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="مهدی ارجمندی — برنامه‌نویس بک‌اند">
+    <meta property="og:description" content="دانشجوی علوم کامپیوتر دانشگاه تبریز، علاقه‌مند به Rust، پایگاه داده و ساخت چیزهای سریع و تمیز.">
+    <meta property="og:image" content="assets/img/avatar.jpg">
+    <meta property="og:locale" content="fa_IR">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "مهدی ارجمندی",
+        "alternateName": "Mahdi Arjmandi",
+        "jobTitle": "برنامه‌نویس بک‌اند",
+        "email": "mailto:mahdiarjmandi007@gmail.com",
+        "url": "https://github.com/Mahdiarjmandi007",
+        "sameAs": [
+            "https://github.com/Mahdiarjmandi007",
+            "https://t.me/daedaluus"
+        ],
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "دانشگاه تبریز"
+        },
+        "knowsAbout": ["Rust", "Python", "C++", "SQLite", "Linux", "Algorithms"]
+    }
+    </script>
+</head>
+<body>
+<a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+
+<div class="page-glow" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+    <div class="container nav">
+        <a class="brand" href="#top" aria-label="مهدی ارجمندی — خانه">
+            <span class="brand-mark" aria-hidden="true">م</span>
+            <span class="brand-text">
+                <strong>مهدی ارجمندی</strong>
+                <small>Backend Developer</small>
+            </span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="ناوبری اصلی">
+            <a href="#about">درباره من</a>
+            <a href="#skills">مهارت‌ها</a>
+            <a href="#projects">پروژه‌ها</a>
+            <a href="#journey">تحصیلات</a>
+            <a href="#contact">تماس</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a class="btn btn-primary btn-sm nav-cta" href="#contact">تماس با من</a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="باز کردن منو">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow reveal">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    دانشجوی علوم کامپیوتر — دانشگاه تبریز
+                </p>
+
+                <h1 class="reveal" data-delay="1">
+                    مهدی <span class="grad-text">ارجمندی</span>
+                </h1>
+
+                <p class="hero-role reveal" data-delay="2">
+                    برنامه‌نویس بک‌اند
+                    <span class="sep" aria-hidden="true">/</span>
+                    <span class="mono">Rust</span>
+                    <span class="sep" aria-hidden="true">·</span>
+                    <span class="mono">Python</span>
+                </p>
+
+                <p class="hero-lead reveal" data-delay="3">
+                    دانشجوی ترم پنجم دانشگاه تبریز. روی بک‌اند، پایگاه داده و ابزارهای
+                    سیستمی کار می‌کنم؛ دنبال مسئله‌های واقعی، کد تمیز و تجربه‌های تیمی.
+                </p>
+
+                <div class="hero-actions reveal" data-delay="4">
+                    <a class="btn btn-primary" href="#projects">
+                        دیدن پروژه‌ها
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </a>
+                    <a class="btn btn-ghost" href="assets/resume.pdf" download>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                        دانلود رزومه
+                    </a>
+                </div>
+
+                <ul class="hero-meta reveal" data-delay="5">
+                    <li>
+                        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.2-7-11a7 7 0 1 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        تبریز، ایران
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14"/></svg>
+                        <bdi>Rust · Python · C++</bdi>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7v5c0 4.4 3.4 8 8 9 4.6-1 8-4.6 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+                        عضو تیم ICPC دانشگاه
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hero-visual reveal" data-delay="3">
+                <div class="profile-card">
+                    <span class="float-chip chip-rust" aria-hidden="true">Rust</span>
+                    <span class="float-chip chip-python" aria-hidden="true">Python</span>
+                    <span class="float-chip chip-sql" aria-hidden="true">SQLite</span>
+
+                    <div class="profile-top">
+                        <div class="avatar-ring">
+                            <img src="assets/img/avatar.jpg" alt="تصویر مهدی ارجمندی" width="92" height="92" loading="eager" decoding="async">
+                        </div>
+                        <div class="profile-id">
+                            <strong>مهدی ارجمندی</strong>
+                            <span>Backend Developer</span>
+                            <span class="availability"><i aria-hidden="true"></i> آمادهٔ همکاری</span>
+                        </div>
+                    </div>
+
+                    <div class="terminal" dir="ltr" aria-label="نمونهٔ ترمینال">
+                        <div class="terminal-bar" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                            <em>mahdi@tabriz:~</em>
+                        </div>
+                        <pre class="terminal-body"><code><span class="t-prompt">$</span> whoami
+<span class="t-out">mahdi — backend developer</span>
+<span class="t-prompt">$</span> cat stack.txt
+<span class="t-out">rust · python · sqlite</span>
+<span class="t-prompt">$</span> ./status
+<span class="t-ok">● open to work</span><span class="t-cursor"></span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="stats reveal">
+                <div class="stat">
+                    <strong>۴</strong>
+                    <span>پروژهٔ منتخب</span>
+                </div>
+                <div class="stat">
+                    <strong>۵</strong>
+                    <span>ترم تحصیل</span>
+                </div>
+                <div class="stat">
+                    <strong>۳</strong>
+                    <span>زبان برنامه‌نویسی</span>
+                </div>
+                <div class="stat">
+                    <strong class="stat-word">ICPC</strong>
+                    <span>تیم دانشگاه تبریز</span>
+                </div>
+            </div>
+        </div>
+
+        <a class="scroll-hint" href="#about" aria-label="رفتن به بخش درباره من">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><i aria-hidden="true"></i>۰۱ — درباره من</span>
+                <h2>کد می‌نویسم تا مسئله‌ها را ساده‌تر کنم</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        من مهدی‌ام؛ از آن آدم‌هایی که وقتی چیزی درست کار نمی‌کند، تا پیدا
+                        کردن دلیلش ول نمی‌کنند. مسیرم با پایتون شروع شد و امروز بیشتر
+                        وقتم صرف <strong>Rust</strong>، طراحی API و کار با پایگاه داده می‌شود.
+                    </p>
+                    <p>
+                        در دانشگاه تبریز علوم کامپیوتر می‌خوانم و کنار درس، روی پروژه‌های
+                        واقعی کار می‌کنم؛ از یک اسکرپر برای LinkedIn تا پیاده‌سازی لایهٔ
+                        داده در یک اپلیکیشن Rust. عضویت در تیم ICPC دانشگاه هم یاد داد
+                        که قبل از کد زدن، مسئله را درست بفهمم.
+                    </p>
+                    <p>
+                        دنبال جایی هستم که در یک تیم مهندسی، از طراحی تا تحویل محصول،
+                        تجربهٔ واقعی کسب کنم.
+                    </p>
+
+                    <div class="about-facts">
+                        <div>
+                            <span>تمرکز فعلی</span>
+                            <strong>Rust · Backend · Data</strong>
+                        </div>
+                        <div>
+                            <span>محل</span>
+                            <strong>تبریز، ایران</strong>
+                        </div>
+                        <div>
+                            <span>وضعیت</span>
+                            <strong class="ok">آمادهٔ همکاری</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-card reveal" data-delay="2">
+                    <div class="code-head" aria-hidden="true">
+                        <span class="file-dot"></span>
+                        <span class="mono">about.rs</span>
+                        <span class="code-lang">Rust</span>
+                    </div>
+                    <pre class="code-block" dir="ltr"><code><span class="c-key">struct</span> <span class="c-type">Developer</span> {
+    name: <span class="c-type">&amp;'static str</span>,
+    university: <span class="c-type">&amp;'static str</span>,
+    semester: <span class="c-type">u8</span>,
+    stack: [<span class="c-type">&amp;'static str</span>; <span class="c-num">3</span>],
+}
+
+<span class="c-key">let</span> me = <span class="c-type">Developer</span> {
+    name: <span class="c-str">"Mahdi Arjmandi"</span>,
+    university: <span class="c-str">"University of Tabriz"</span>,
+    semester: <span class="c-num">5</span>,
+    stack: [<span class="c-str">"Rust"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"SQLite"</span>],
+};</code></pre>
+                    <div class="code-foot">
+                        <span class="ok-dot" aria-hidden="true"></span>
+                        <span>compiles without warnings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><i aria-hidden="true"></i>۰۲ — مهارت‌ها</span>
+                <h2>جعبه‌ابزار من</h2>
+                <p class="section-desc">
+                    چیزهایی که در پروژه‌های واقعی استفاده کرده‌ام؛ نه فقط اسمشان در رزومه.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card reveal">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14"/></svg>
+                    </div>
+                    <h3>زبان‌های برنامه‌نویسی</h3>
+                    <ul class="chip-list">
+                        <li class="chip chip-rust">Rust</li>
+                        <li class="chip chip-python">Python</li>
+                        <li class="chip">C / C++</li>
+                        <li class="chip">SQL</li>
+                    </ul>
+                    <p class="skill-note">Rust برای بک‌اند، Python برای ابزار و داده.</p>
+                </article>
+
+                <article class="skill-card reveal" data-delay="1">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+                    </div>
+                    <h3>پایگاه داده و داده</h3>
+                    <ul class="chip-list">
+                        <li class="chip">SQLite</li>
+                        <li class="chip">SQL</li>
+                        <li class="chip">CRUD</li>
+                        <li class="chip">طراحی کوئری</li>
+                    </ul>
+                    <p class="skill-note">بیشتر با SQLite؛ از طراحی جدول تا بهینه‌سازی کوئری.</p>
+                </article>
+
+                <article class="skill-card reveal" data-delay="2">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 2 2-2 2M12 13h5"/></svg>
+                    </div>
+                    <h3>ابزار و سیستم‌عامل</h3>
+                    <ul class="chip-list">
+                        <li class="chip">Git / GitHub</li>
+                        <li class="chip">Linux</li>
+                        <li class="chip">Unix Domain Socket</li>
+                        <li class="chip">ffmpeg</li>
+                    </ul>
+                    <p class="skill-note">کار روزمره روی لینوکس و ارتباط بین پردازه‌ها با UDS.</p>
+                </article>
+
+                <article class="skill-card reveal" data-delay="3">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.5"/></svg>
+                    </div>
+                    <h3>مفاهیم و مهارت‌ها</h3>
+                    <ul class="chip-list">
+                        <li class="chip">ساختمان داده و الگوریتم</li>
+                        <li class="chip">OOP</li>
+                        <li class="chip">شبکه</li>
+                        <li class="chip">حل مسئله</li>
+                    </ul>
+                    <p class="skill-note">پیاده‌سازی از صفر، نه فقط استفاده از کتابخانه.</p>
+                </article>
+            </div>
+
+            <div class="skills-extra reveal">
+                <span class="extra-label">همچنین:</span>
+                <span>کار تیمی</span>
+                <span>مدیریت زمان</span>
+                <span>یادگیری سریع</span>
+                <span>مطالعهٔ مستندات فنی</span>
+                <span>زبان انگلیسی — متوسط</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><i aria-hidden="true"></i>۰۳ — پروژه‌ها</span>
+                <h2>چیزهایی که ساخته‌ام</h2>
+                <p class="section-desc">
+                    پروژه‌های دانشگاهی و شخصی؛ هر کدام یک مسئلهٔ واقعی و یک درس تازه.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project reveal">
+                    <div class="project-cover cover-1">
+                        <span class="project-index mono">01</span>
+                        <svg viewBox="0 0 24 24" width="54" height="54" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.3-4.3M8 11h6M11 8v6"/></svg>
+                        <span class="cover-grid" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3>LinkedIn Scraper</h3>
+                            <span class="project-type">ابزار داده</span>
+                        </div>
+                        <p>
+                            استخراج خودکار پیشنهادهای شغلی از LinkedIn بر اساس موقعیت
+                            مکانی و حوزهٔ کاری؛ داده‌ها در SQLite ذخیره و در رابط
+                            Streamlit نمایش داده می‌شوند.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li><li>Selenium</li><li>Streamlit</li><li>SQLite</li>
+                        </ul>
+                        <a class="project-link" href="https://github.com/Mahdiarjmandi007/linkedin__scraper" target="_blank" rel="noopener noreferrer">
+                            سورس کد
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-delay="1">
+                    <div class="project-cover cover-2">
+                        <span class="project-index mono">02</span>
+                        <svg viewBox="0 0 24 24" width="54" height="54" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg>
+                        <span class="cover-grid" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3>PixRoot</h3>
+                            <span class="project-type">پروژهٔ تیمی</span>
+                        </div>
+                        <p>
+                            مشارکت در بک‌اند اپلیکیشن PixRoot با Rust؛ پیاده‌سازی لایهٔ
+                            دسترسی به داده (CRUD) و ارتباط بک‌اند و فرانت‌اند با
+                            Unix Domain Socket.
+                        </p>
+                        <ul class="tags">
+                            <li>Rust</li><li>SQLite</li><li>Linux</li><li>UDS</li>
+                        </ul>
+                        <a class="project-link" href="https://github.com/mahyar1w/PixRoot" target="_blank" rel="noopener noreferrer">
+                            مشاهدهٔ پروژه
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-delay="2">
+                    <div class="project-cover cover-3">
+                        <span class="project-index mono">03</span>
+                        <svg viewBox="0 0 24 24" width="54" height="54" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3Z"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+                        <span class="cover-grid" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3>Noteb Database</h3>
+                            <span class="project-type">Fork</span>
+                        </div>
+                        <p>
+                            تبدیل پایگاه‌دادهٔ Noteb از SQL به SQLite، ساخت ابزارهای
+                            استفادهٔ آسان‌تر و بازبینی و بهینه‌سازی داده‌ها برای
+                            پرس‌وجو و تحلیل.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li><li>SQL</li><li>SQLite</li>
+                        </ul>
+                        <a class="project-link" href="https://github.com/Mahdiarjmandi007/noteb_databases_may2025" target="_blank" rel="noopener noreferrer">
+                            سورس کد
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project reveal" data-delay="3">
+                    <div class="project-cover cover-4">
+                        <span class="project-index mono">04</span>
+                        <svg viewBox="0 0 24 24" width="54" height="54" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-2h12v2"/></svg>
+                        <span class="cover-grid" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3>ساختمان داده و الگوریتم</h3>
+                            <span class="project-type">C++</span>
+                        </div>
+                        <p>
+                            پیاده‌سازی از صفر هش‌تیبل با آدرس‌دهی باز، هیپ، لیست
+                            پیوندی حلقوی، درخت دودویی کامل و جست‌وجوی دودویی؛
+                            برای درک عمیق مفاهیم.
+                        </p>
+                        <ul class="tags">
+                            <li>C++</li><li>STL</li><li>Algorithms</li>
+                        </ul>
+                        <a class="project-link" href="https://github.com/Mahdiarjmandi007/data-structures-and-algorithms-cpp" target="_blank" rel="noopener noreferrer">
+                            سورس کد
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-more reveal">
+                <a class="btn btn-ghost" href="https://github.com/Mahdiarjmandi007?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.6 5.4-5.2 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                    همهٔ پروژه‌ها در GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section class="section section-alt" id="journey">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><i aria-hidden="true"></i>۰۴ — تحصیلات و فعالیت</span>
+                <h2>مسیر فعلی</h2>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card reveal">
+                    <span class="info-kicker">تحصیلات</span>
+                    <h3>دانشگاه تبریز</h3>
+                    <p class="info-main">کارشناسی علوم کامپیوتر — ترم پنجم</p>
+                    <p class="info-desc">
+                        تمرکز روی الگوریتم، ساختمان داده، پایگاه داده و
+                        برنامه‌نویسی سیستمی.
+                    </p>
+                    <span class="info-year mono">Semester 5</span>
+                </article>
+
+                <article class="info-card reveal" data-delay="1">
+                    <span class="info-kicker">مسابقه</span>
+                    <h3>ICPC — دانشگاه تبریز</h3>
+                    <p class="info-main">عضو تیم دوم مسابقات</p>
+                    <p class="info-desc">
+                        حل مسئله‌های الگوریتمی در قالب تیمی و زیر فشار زمان.
+                    </p>
+                    <span class="info-year mono">Team #2</span>
+                </article>
+
+                <article class="info-card reveal" data-delay="2">
+                    <span class="info-kicker">زبان</span>
+                    <h3>فارسی و انگلیسی</h3>
+                    <p class="info-main">فارسی: زبان مادری</p>
+                    <p class="info-desc">
+                        انگلیسی متوسط؛ مطالعهٔ مستندات فنی، کتاب‌ها و دوره‌های تخصصی.
+                    </p>
+                    <span class="info-year mono">EN — Intermediate</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-card reveal">
+                <span class="contact-glow" aria-hidden="true"></span>
+                <span class="section-kicker"><i aria-hidden="true"></i>۰۵ — تماس</span>
+                <h2>بیایید چیزی بسازیم.</h2>
+                <p class="contact-lead">
+                    اگر پروژه‌ای داری، یا دنبال هم‌تیمی برای کارآموزی و همکاری هستی،
+                    خوشحال می‌شوم بشنوم. سریع‌ترین راه، ایمیل است.
+                </p>
+
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="mailto:mahdiarjmandi007@gmail.com">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        ارسال ایمیل
+                    </a>
+                    <button class="btn btn-ghost" type="button" id="copyEmail" data-email="mahdiarjmandi007@gmail.com">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+                        <span id="copyLabel">کپی ایمیل</span>
+                    </button>
+                </div>
+
+                <div class="contact-bottom">
+                    <a class="social-link" href="https://github.com/Mahdiarjmandi007" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.6 5.4-5.2 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                        github.com/Mahdiarjmandi007
+                    </a>
+                    <a class="social-link" href="https://t.me/daedaluus" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1L18 6.4c.4-.4-.1-.6-.6-.2L7.1 12.9l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5L20.7 3c.9-.3 1.6.2 1.2 1.3Z"/></svg>
+                        t.me/daedaluus
+                    </a>
+                    <a class="social-link" href="mailto:mahdiarjmandi007@gmail.com">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        mahdiarjmandi007@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© <span data-year>۱۴۰۵</span> — مهدی ارجمندی</p>
+        <!-- <p class="footer-note">
+            ساخته‌شده با <span class="mono">HTML</span> و <span class="mono">CSS</span>
+            <span class="footer-sep" aria-hidden="true">·</span>
+            بدون بک‌اند
+        </p> -->
+        <a class="back-top" href="#top" aria-label="بازگشت به بالا">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            بالا
+        </a>
+    </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
