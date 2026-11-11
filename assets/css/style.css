@@ -556,9 +556,16 @@ h1 {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
+    width: fit-content;
     margin-top: 0.35rem;
     color: var(--green) !important;
     font-size: 0.72rem !important;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.availability:hover {
+    opacity: 0.8;
 }
 
 .availability i {
@@ -838,6 +845,39 @@ h2 {
     font-size: 0.82rem;
     font-weight: 600;
     color: var(--text);
+}
+
+.interests {
+    margin-top: 1.4rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.interests-label {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--faint);
+    font-size: 0.72rem;
+}
+
+.interest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.interest-list li {
+    padding: 0.28rem 0.65rem;
+    border: 1px solid rgba(255, 122, 69, 0.2);
+    border-radius: 999px;
+    background: rgba(255, 122, 69, 0.06);
+    color: var(--accent-2);
+    font-size: 0.73rem;
 }
 
 .ok {
@@ -1213,6 +1253,15 @@ h2 {
     font-size: 1.12rem;
 }
 
+.info-en {
+    margin-inline-start: 0.25rem;
+    color: var(--faint);
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
 .info-main {
     margin: 0 0 0.55rem;
     font-size: 0.84rem;
@@ -1230,7 +1279,13 @@ h2 {
     color: var(--faint);
     font-size: 0.64rem;
     letter-spacing: 0.05em;
+    text-decoration: none;
     unicode-bidi: isolate;
+    transition: color 0.2s ease;
+}
+
+a.info-year:hover {
+    color: var(--accent-2);
 }
 
 /* ==========================================================================
